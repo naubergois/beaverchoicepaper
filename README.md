@@ -37,15 +37,15 @@ All the files have been provided in the VS Code workspace on the Udacity platfor
 
 Make sure you have Python 3.8+ installed.
 
-You can install all required packages using the provided requirements.txt file:
+Install all dependencies using the provided file:
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
-If you're using smolagents, install it separately:
-
-`pip install smolagents`
-
-For other options like pydantic-ai or npcsh[lite], refer to their documentation.
+This already includes `smolagents`, `streamlit` and other libraries required to
+run the project. For alternative frameworks such as `pydantic-ai` or
+`npcsh[lite]`, refer to their own documentation.
 
 2. Create .env File
 
@@ -69,6 +69,30 @@ Output will include:
 - Cash and inventory updates
 - Final financial report
 - A `test_results.csv` file with all interaction logs
+
+---
+## Agent Overview
+
+The file `project_starter.py` defines a compact team of agents:
+
+- **InventoryAgent** – checks or reorders stock as required.
+- **QuoteAgent** – calculates discounts and totals for a quote.
+- **OrderAgent** – records finalized sales.
+
+These are orchestrated by **OrchestratorAgent**, which receives the customer
+request and coordinates each step.
+
+## Streamlit Interface
+
+You can interact with the orchestrator using Streamlit. Launch it with:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Enter the text of the request (e.g. "200 sheets of A4 paper") and the desired
+date. The agents will reply with stock status, a full quote and delivery
+information.
 
 ---
 
