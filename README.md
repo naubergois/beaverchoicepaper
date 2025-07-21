@@ -118,3 +118,7 @@ Make sure to submit the following files:
 4. Outputs from your test run (like `test_results.csv`)
 
 ---
+
+## Video Demonstration
+
+[![Video Thumbnail](https://img.youtube.com/vi/-TFLNQqNYwk/0.jpg)](https://www.youtube.com/watch?v=-TFLNQqNYwk)
