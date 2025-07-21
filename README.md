@@ -1,5 +1,7 @@
 # Munder Difflin Multi-Agent System Project
 
+![Logo](logo.png)
+
 Welcome to the starter code repository for the **Munder Difflin Paper Company Multi-Agent System Project**! This repository contains the starter code and tools you will need to design, build, and test a multi-agent system that supports core business operations at a fictional paper manufacturing company.
 
 ## Project Context
